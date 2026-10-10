@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHL Filial SP - Captação de Agregados</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dhl: {
+                            yellow: '#FFCC00',
+                            yellowDark: '#E6B800',
+                            red: '#D40511',
+                            redDark: '#A0000B',
+                            black: '#111111',
+                            darkGray: '#222222',
+                            lightGray: '#F4F5F7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F8F9FA;
+            color: #111111;
+        }
+        .dhl-stripe-pattern {
+            background-color: #FFCC00;
+            background-image: repeating-linear-gradient(
+                -45deg,
+                rgba(212, 5, 17, 0.08),
+                rgba(212, 5, 17, 0.08) 25px,
+                transparent 25px,
+                transparent 50px
+            );
+        }
+        .dhl-shadow {
+            box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.18);
+        }
+        .img-overlay-gradient {
+            background: linear-gradient(to top, rgba(17, 17, 17, 0.9) 0%, rgba(17, 17, 17, 0.3) 60%, rgba(17, 17, 17, 0.1) 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased pb-16 md:pb-0 selection:bg-dhl-red selection:text-white">
+
+    <!-- HEADER -->
+    <header class="bg-dhl-yellow border-b-4 border-dhl-red sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            
+            <!-- DHL Brand Header -->
+            <div class="flex items-center space-x-3">
+                <div class="bg-dhl-red text-dhl-yellow font-black italic text-2xl sm:text-3xl tracking-tighter px-3 py-1 rounded shadow-sm transform -skew-x-12 inline-block">
+                    DHL
+                </div>
+                <div class="border-l-2 border-black/20 pl-3">
+                    <span class="block text-[10px] sm:text-xs font-black uppercase tracking-widest text-dhl-darkGray">Filial SP</span>
+                    <span class="block text-xs sm:text-sm font-extrabold text-dhl-red leading-none uppercase">Captação de Agregados</span>
+                </div>
+            </div>
+
+            <!-- WhatsApp Action Header Buttons -->
+            <div class="hidden md:flex items-center space-x-3">
+                <a href="https://wa.me/5511994531007?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20agregar%20meu%20ve%C3%ADculo%20na%20DHL%20Filial%20SP." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs px-3.5 py-2.5 rounded-xl flex items-center gap-2 shadow-sm transition transform active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> (11) 99453-1007
+                </a>
+                <a href="https://wa.me/5511976832218?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20agregar%20meu%20ve%C3%ADculo%20na%20DHL%20Filial%20SP." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs px-3.5 py-2.5 rounded-xl flex items-center gap-2 shadow-sm transition transform active:scale-95">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> (11) 97683-2218
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH REALISTIC IMAGES -->
+    <section class="dhl-stripe-pattern py-10 md:py-16 relative overflow-hidden border-b border-yellow-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Main Copy -->
+                <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-dhl-red text-white text-xs font-black uppercase tracking-wider px-4 py-1.5 rounded-full shadow-sm">
+                        <i class="fa-solid fa-truck-fast animate-bounce"></i> Vagas Abertas - Agregamento Ativo
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-dhl-black uppercase leading-tight tracking-tight">
+                        DHL FILIAL SP <br>
+                        <span class="text-dhl-red bg-white/80 px-2 rounded inline-block mt-1">ESTAMOS AGREGANDO!</span>
+                    </h1>
+
+                    <p class="text-dhl-darkGray font-bold text-base md:text-lg max-w-2xl">
+                        Aumente seus rendimentos transportando para a maior multinacional de logística. Atuação estratégica na Região de São Paulo.
+                    </p>
+
+                    <!-- Quick Spec Highlights -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left">
+                        <div class="bg-white/90 p-3 rounded-xl border-l-4 border-dhl-red shadow-sm">
+                            <span class="block text-[10px] font-black uppercase text-gray-500">Perfis</span>
+                            <span class="font-black text-dhl-black text-sm sm:text-base">TOCO & TRUCK</span>
+                        </div>
+                        <div class="bg-white/90 p-3 rounded-xl border-l-4 border-emerald-600 shadow-sm">
+                            <span class="block text-[10px] font-black uppercase text-gray-500">Pagamento</span>
+                            <span class="font-black text-emerald-700 text-sm sm:text-base">EM 24 HORAS</span>
+                        </div>
+                        <div class="bg-white/90 p-3 rounded-xl border-l-4 border-dhl-black shadow-sm col-span-2 sm:col-span-1">
+                            <span class="block text-[10px] font-black uppercase text-gray-500">Região</span>
+                            <span class="font-black text-dhl-black text-sm sm:text-base">SÃO PAULO</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                        <a href="#formulario" 
+                           class="bg-dhl-red hover:bg-dhl-redDark text-white font-black text-sm uppercase px-7 py-4 rounded-xl shadow-lg hover:shadow-xl transition transform active:scale-95 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-pen text-lg"></i> Preencher Pré-Cadastro
+                        </a>
+                        <a href="#contatos" 
+                           class="bg-dhl-black hover:bg-black text-white font-black text-sm uppercase px-7 py-4 rounded-xl shadow-lg hover:shadow-xl transition transform active:scale-95 flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i> Atendimento WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Showcase Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden dhl-shadow border-4 border-white bg-dhl-black group">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" 
+                             alt="Centro de Logística DHL" 
+                             onerror="this.src='https://placehold.co/800x600/111111/FFCC00?text=DHL+LOGISTICA'"
+                             class="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition duration-700">
+                        
+                        <div class="absolute inset-0 img-overlay-gradient flex flex-col justify-end p-6 text-white">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="bg-dhl-yellow text-dhl-black text-[10px] font-black uppercase px-2 py-0.5 rounded">
+                                    Base SP
+                                </span>
+                                <span class="text-xs text-gray-300 font-medium"><i class="fa-solid fa-warehouse"></i> Centro de Distribuição</span>
+                            </div>
+                            <h2 class="text-xl font-black uppercase text-white">Operação e Cargas de Alta Demanda</h2>
+                            <p class="text-xs text-gray-300 mt-1">Frota dedicada e rotas fixas para motoristas agregados em São Paulo.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VEHICLE PROFILES SECTION (TOCO & TRUCK) -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-black uppercase tracking-widest text-dhl-red">Veículos Aceitos</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-dhl-black uppercase">Perfis de Caminhão Procurados</h2>
+                <div class="w-20 h-1.5 bg-dhl-yellow mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Perfil Toco -->
+                <div class="bg-gray-50 rounded-3xl overflow-hidden border-2 border-gray-200 hover:border-dhl-yellow transition dhl-shadow flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Caminhão Perfil Toco" 
+                                 onerror="this.src='https://placehold.co/800x500/FFCC00/111111?text=Caminhao+Toco'"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-dhl-red text-white text-xs font-black uppercase px-3 py-1 rounded-full shadow-md">
+                                Perfil 01
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-2xl font-black text-dhl-black uppercase">Caminhão Toco</h3>
+                                <span class="bg-dhl-yellow/30 text-dhl-black text-xs font-bold px-2.5 py-1 rounded-lg">Chassi Simples</span>
+                            </div>
+                            <p class="text-xs text-gray-600 font-medium mb-4 leading-relaxed">
+                                Ideal para distribuição urbana e regional. Exigimos veículo em bom estado de conservação mecânica e documental.
+                            </p>
+
+                            <div class="bg-white p-3.5 rounded-2xl border border-gray-200 space-y-2 text-xs font-bold text-gray-800">
+                                <div class="flex items-center gap-2 text-dhl-red">
+                                    <i class="fa-solid fa-circle-check"></i> <span>Rotas Diárias na Região de São Paulo</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-emerald-700">
+                                    <i class="fa-solid fa-circle-check"></i> <span>Pagamento Garantido em 24 Horas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="#formulario" 
+                           class="w-full bg-dhl-black hover:bg-black text-white font-black text-xs uppercase py-3.5 rounded-xl block text-center transition">
+                            Agregar Toco Agora
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Perfil Truck -->
+                <div class="bg-gray-50 rounded-3xl overflow-hidden border-2 border-gray-200 hover:border-dhl-red transition dhl-shadow flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Caminhão Perfil Truck" 
+                                 onerror="this.src='https://placehold.co/800x500/D40511/FFFFFF?text=Caminhao+Truck'"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 left-4 bg-dhl-yellow text-dhl-black text-xs font-black uppercase px-3 py-1 rounded-full shadow-md">
+                                Perfil 02
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-2xl font-black text-dhl-black uppercase">Caminhão Truck</h3>
+                                <span class="bg-dhl-red/10 text-dhl-red text-xs font-bold px-2.5 py-1 rounded-lg">Eixo Duplo</span>
+                            </div>
+                            <p class="text-xs text-gray-600 font-medium mb-4 leading-relaxed">
+                                Veículo pesado com maior capacidade de volume e carga para suprir a demanda contínua da filial SP.
+                            </p>
+
+                            <div class="bg-white p-3.5 rounded-2xl border border-gray-200 space-y-2 text-xs font-bold text-gray-800">
+                                <div class="flex items-center gap-2 text-dhl-red">
+                                    <i class="fa-solid fa-circle-check"></i> <span>Demandas Constantes e Preferenciais</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-emerald-700">
+                                    <i class="fa-solid fa-circle-check"></i> <span>Pagamento Rápido em 24 Horas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="#formulario" 
+                           class="w-full bg-dhl-red hover:bg-dhl-redDark text-white font-black text-xs uppercase py-3.5 rounded-xl block text-center transition">
+                            Agregar Truck Agora
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- REQUIREMENTS & SECURITY SECTION -->
+    <section class="py-12 bg-gray-100 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-black uppercase tracking-widest text-dhl-red">Normas de Segurança</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-dhl-black uppercase">Requisitos e Diferenciais</h2>
+                <div class="w-20 h-1.5 bg-dhl-yellow mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Pagamento em 24 horas -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-emerald-500 dhl-shadow relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-10 text-emerald-600 text-8xl">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-clock font-black"></i>
+                    </div>
+                    <span class="bg-emerald-100 text-emerald-800 text-[10px] font-black uppercase px-2.5 py-1 rounded-full inline-block mb-2">Vantagem Financeira</span>
+                    <h3 class="text-xl font-black text-dhl-black uppercase mb-2">Pagamento em 24 Horas</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed font-medium">
+                        Na DHL Filial SP você não espera 30 dias. Pagamento efetuado em até 24 horas após a validação e conclusão das entregas.
+                    </p>
+                </div>
+
+                <!-- Rastreador Obrigatório -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-dhl-red dhl-shadow relative overflow-hidden">
+                    <div class="absolute -right-4 -bottom-4 opacity-10 text-dhl-red text-8xl">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                    </div>
+                    <div class="w-12 h-12 bg-dhl-red text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <span class="bg-dhl-red text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full inline-block mb-2">Obrigatório</span>
+                    <h3 class="text-xl font-black text-dhl-black uppercase mb-2">Rastreador Homologado</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed font-medium mb-3">
+                        É obrigatório possuir sinal ativo em uma das gerenciadoras aceitas:
+                    </p>
+                    <div class="grid grid-cols-2 gap-1.5 text-xs font-black text-dhl-darkGray">
+                        <div class="bg-gray-100 p-2 rounded-lg border border-gray-200 flex items-center gap-1.5"><i class="fa-solid fa-check text-dhl-red"></i> Omnilink</div>
+                        <div class="bg-gray-100 p-2 rounded-lg border border-gray-200 flex items-center gap-1.5"><i class="fa-solid fa-check text-dhl-red"></i> Autotrack</div>
+                        <div class="bg-gray-100 p-2 rounded-lg border border-gray-200 flex items-center gap-1.5"><i class="fa-solid fa-check text-dhl-red"></i> Sascar</div>
+                        <div class="bg-gray-100 p-2 rounded-lg border border-gray-200 flex items-center gap-1.5"><i class="fa-solid fa-check text-dhl-red"></i> Onixsat</div>
+                    </div>
+                </div>
+
+                <!-- Diferencial Trava -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-dhl-yellow dhl-shadow relative overflow-hidden sm:col-span-2 lg:col-span-1">
+                    <div class="absolute -right-4 -bottom-4 opacity-10 text-dhl-yellow text-8xl">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="w-12 h-12 bg-dhl-yellow text-dhl-black rounded-2xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <span class="bg-dhl-black text-dhl-yellow text-[10px] font-black uppercase px-2.5 py-1 rounded-full inline-block mb-2">Diferencial</span>
+                    <h3 class="text-xl font-black text-dhl-black uppercase mb-2">Segunda Trava</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed font-medium mb-3">
+                        Agilize a aprovação do seu veículo apresentando um segundo dispositivo de segurança ativo:
+                    </p>
+                    <div class="bg-yellow-50 p-3 rounded-2xl border border-dhl-yellow text-center text-xs font-black text-dhl-black">
+                        <i class="fa-solid fa-star text-dhl-red mr-1"></i> Trava T4S ou 3S
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRE-REGISTRATION FORM SECTION -->
+    <section id="formulario" class="py-12 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            
+            <div class="bg-dhl-black text-white rounded-3xl overflow-hidden dhl-shadow border-4 border-dhl-yellow">
+                
+                <!-- Form Top Banner -->
+                <div class="bg-dhl-red p-6 sm:p-8 relative">
+                    <div class="relative z-10">
+                        <span class="bg-dhl-yellow text-dhl-black text-xs font-black uppercase px-3 py-1 rounded-md tracking-wider">
+                            Cadastro Rápido
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl font-black text-white uppercase mt-2">
+                            Pré-Cadastro Filial SP
+                        </h2>
+                        <p class="text-white/80 text-xs sm:text-sm mt-1">
+                            Preencha os dados abaixo. Ao clicar em enviar, as informações serão formatadas e abertas <strong>diretamente no WhatsApp</strong> do recrutador!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Form Inputs -->
+                <form id="formAgregamento" onsubmit="processarEnvioWhatsApp(event)" class="p-6 sm:p-8 space-y-5">
+                    
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <!-- Nome -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-300 mb-2">
+                                Nome Completo <span class="text-dhl-yellow">*</span>
+                            </label>
+                            <input type="text" id="campoNome" required placeholder="Ex: Carlos Silva" 
+                                   class="w-full bg-gray-900 text-white px-4 py-3.5 rounded-xl border border-gray-700 focus:border-dhl-yellow focus:outline-none transition text-sm font-medium">
+                        </div>
+
+                        <!-- Telefone -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-300 mb-2">
+                                Telefone / WhatsApp <span class="text-dhl-yellow">*</span>
+                            </label>
+                            <input type="tel" id="campoTelefone" required placeholder="(11) 99999-9999" 
+                                   class="w-full bg-gray-900 text-white px-4 py-3.5 rounded-xl border border-gray-700 focus:border-dhl-yellow focus:outline-none transition text-sm font-medium">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-3 gap-5">
+                        <!-- Perfil do Veículo -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-300 mb-2">
+                                Perfil do Caminhão <span class="text-dhl-yellow">*</span>
+                            </label>
+                            <select id="campoPerfil" required class="w-full bg-gray-900 text-white px-4 py-3.5 rounded-xl border border-gray-700 focus:border-dhl-yellow focus:outline-none transition text-sm font-bold">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="TOCO">TOCO</option>
+                                <option value="TRUCK">TRUCK</option>
+                            </select>
+                        </div>
+
+                        <!-- Rastreador -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-300 mb-2">
+                                Marca do Rastreador <span class="text-dhl-yellow">*</span>
+                            </label>
+                            <select id="campoRastreador" required class="w-full bg-gray-900 text-white px-4 py-3.5 rounded-xl border border-gray-700 focus:border-dhl-yellow focus:outline-none transition text-sm font-bold">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="Omnilink">Omnilink</option>
+                                <option value="Autotrack">Autotrack</option>
+                                <option value="Sascar">Sascar</option>
+                                <option value="Onixsat">Onixsat</option>
+                                <option value="Outra Marca">Outro Rastreador</option>
+                            </select>
+                        </div>
+
+                        <!-- Segunda Trava -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-300 mb-2">
+                                Segunda Trava? <span class="text-dhl-yellow">*</span>
+                            </label>
+                            <select id="campoTrava" required class="w-full bg-gray-900 text-white px-4 py-3.5 rounded-xl border border-gray-700 focus:border-dhl-yellow focus:outline-none transition text-sm font-bold">
+                                <option value="Não possui">Não possui</option>
+                                <option value="Sim - Trava T4S">Sim - T4S</option>
+                                <option value="Sim - Trava 3S">Sim - 3S</option>
+                                <option value="Sim - Outro Modelo">Sim - Outra</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Escolha do Atendente -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-300 mb-2">
+                            Enviar Para Qual Atendente do WhatsApp? <span class="text-dhl-yellow">*</span>
+                        </label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="bg-gray-900 border-2 border-emerald-500/80 p-3.5 rounded-xl flex items-center gap-3 cursor-pointer hover:bg-gray-800 transition">
+                                <input type="radio" name="atendenteWhatsapp" value="5511994531007" checked class="w-4 h-4 text-emerald-500 accent-emerald-500">
+                                <div class="text-xs">
+                                    <span class="block font-black text-white">Captação 01</span>
+                                    <span class="block text-emerald-400 font-extrabold">(11) 99453-1007</span>
+                                </div>
+                            </label>
+
+                            <label class="bg-gray-900 border-2 border-emerald-500/80 p-3.5 rounded-xl flex items-center gap-3 cursor-pointer hover:bg-gray-800 transition">
+                                <input type="radio" name="atendenteWhatsapp" value="5511976832218" class="w-4 h-4 text-emerald-500 accent-emerald-500">
+                                <div class="text-xs">
+                                    <span class="block font-black text-white">Captação 02</span>
+                                    <span class="block text-emerald-400 font-extrabold">(11) 97683-2218</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" 
+                            class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm uppercase tracking-wider py-4 rounded-xl shadow-lg transition transform active:scale-[0.99] flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar Cadastro Diretamente no WhatsApp
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DIRECT CONTACT CARDS -->
+    <section id="contatos" class="py-12 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center mb-8">
+                <span class="text-xs font-black uppercase tracking-widest text-dhl-red">Atendimento Rápido</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-dhl-black uppercase">
+                    Contate o Time de Captação
+                </h2>
+                <p class="text-gray-600 text-xs sm:text-sm mt-1">
+                    Clique em um dos botões abaixo para abrir o WhatsApp diretamente no seu celular ou computador:
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+                
+                <!-- Contact 1 -->
+                <a href="https://wa.me/5511994531007?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20agregar%20meu%20ve%C3%ADculo%20na%20DHL%20Filial%20SP." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="bg-white hover:bg-emerald-50 border-2 border-emerald-500 rounded-3xl p-6 transition dhl-shadow flex items-center justify-between group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-3xl shadow-md group-hover:scale-110 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold uppercase text-emerald-800">Time de Captação 01</span>
+                            <span class="block text-xl font-black text-gray-900">(11) 99453-1007</span>
+                            <span class="inline-block text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded mt-1">Clique para iniciar conversa</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-emerald-600 text-xl group-hover:translate-x-1 transition"></i>
+                </a>
+
+                <!-- Contact 2 -->
+                <a href="https://wa.me/5511976832218?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20agregar%20meu%20ve%C3%ADculo%20na%20DHL%20Filial%20SP." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="bg-white hover:bg-emerald-50 border-2 border-emerald-500 rounded-3xl p-6 transition dhl-shadow flex items-center justify-between group">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-3xl shadow-md group-hover:scale-110 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold uppercase text-emerald-800">Time de Captação 02</span>
+                            <span class="block text-xl font-black text-gray-900">(11) 97683-2218</span>
+                            <span class="inline-block text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded mt-1">Clique para iniciar conversa</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-emerald-600 text-xl group-hover:translate-x-1 transition"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MOBILE STICKY BOTTOM CONTACT BAR -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-dhl-black p-2.5 z-50 border-t-2 border-dhl-yellow shadow-2xl flex items-center gap-2">
+        <a href="https://wa.me/5511994531007?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20agregar%20meu%20ve%C3%ADculo%20na%20DHL%20Filial%20SP." 
+           target="_blank" rel="noopener noreferrer" 
+           class="flex-1 bg-emerald-600 active:bg-emerald-700 text-white py-3 px-2 rounded-xl text-[11px] font-black flex items-center justify-center gap-1.5 shadow">
+            <i class="fa-brands fa-whatsapp text-base"></i> (11) 99453-1007
+        </a>
+        <a href="https://wa.me/5511976832218?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20agregar%20meu%20ve%C3%ADculo%20na%20DHL%20Filial%20SP." 
+           target="_blank" rel="noopener noreferrer" 
+           class="flex-1 bg-emerald-600 active:bg-emerald-700 text-white py-3 px-2 rounded-xl text-[11px] font-black flex items-center justify-center gap-1.5 shadow">
+            <i class="fa-brands fa-whatsapp text-base"></i> (11) 97683-2218
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dhl-black text-white mt-auto py-8 border-t-4 border-dhl-red text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center space-y-3">
+            <div class="inline-block bg-dhl-red text-dhl-yellow font-black italic px-3 py-1 text-2xl rounded transform -skew-x-12">
+                DHL
+            </div>
+            <p class="font-extrabold text-gray-200 uppercase tracking-wider">
+                DHL Filial SP — Captação de Agregados (Toco e Truck)
+            </p>
+            <p class="text-gray-400 max-w-lg mx-auto">
+                Rotas na Região de São Paulo | Pagamento em 24 Horas | Rastreadores Omnilink, Autotrack, Sascar e Onixsat
+            </p>
+            <div class="pt-4 border-t border-gray-800 text-gray-500">
+                &copy; DHL Supply Chain / Filial SP. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function processarEnvioWhatsApp(e) {
+            e.preventDefault();
+
+            // Retrieve input values
+            const nome = document.getElementById('campoNome').value.trim();
+            const telefone = document.getElementById('campoTelefone').value.trim();
+            const perfil = document.getElementById('campoPerfil').value;
+            const rastreador = document.getElementById('campoRastreador').value;
+            const trava = document.getElementById('campoTrava').value;
+
+            // Retrieve selected WhatsApp attendant number
+            const radios = document.getElementsByName('atendenteWhatsapp');
+            let numeroDestino = '5511994531007';
+            for (let r of radios) {
+                if (r.checked) {
+                    numeroDestino = r.value;
+                    break;
+                }
+            }
+
+            // Construct formatted message
+            let mensagem = `*MENSAGEM DE PRÉ-CADASTRO - CAPTAÇÃO DHL FILIAL SP*\n\n`;
+            mensagem += `👤 *Nome Completo:* ${nome}\n`;
+            mensagem += `📱 *Telefone/WhatsApp:* ${telefone}\n`;
+            mensagem += `🚚 *Perfil do Veículo:* ${perfil}\n`;
+            mensagem += `📡 *Rastreador:* ${rastreador}\n`;
+            mensagem += `🔒 *Segunda Trava:* ${trava}\n\n`;
+            mensagem += `_Olá! Preenchi o formulário da página e gostaria de agregar meu veículo na DHL Filial SP._`;
+
+            // Encode for URL query string
+            const mensagemFormatada = encodeURIComponent(mensagem);
+            const linkWhatsApp = `https://wa.me/${numeroDestino}?text=${mensagemFormatada}`;
+
+            // Redirect directly to WhatsApp
+            window.location.href = linkWhatsApp;
+        }
+    </script>
+</body>
+</html>
